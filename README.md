@@ -57,6 +57,7 @@ All of the environment variables below are required
 |**WPE_INSTALL**|The subdomain of your WP Engine install **(This is for single installs only and is considered deprecated)**|:heavy_exclamation_mark:|
 |**PROJECT_TYPE**|(**"theme"** or **"plugin"**) This really just determines what base folder your repo should be deployed to|:heavy_exclamation_mark:|
 
+One thing to note on the **'WPE_INSTALL'** is the name convention, for example if you want to deploy to dev or staging you will need to make sure that the **WPE_INSTALL** is mapped to the dev or staging subdomain.
 
 The variables below are not required, but are utilized to work with WP Engine's current multi-environment setup. Moving away from legacy staging, WP Engine now utilizes 3 individual installs under one "site". The are all essentially part of your same hosting environment, but are treated as Production, Staging, and Development environments when it comes to your workflow.
 
