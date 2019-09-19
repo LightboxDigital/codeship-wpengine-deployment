@@ -10,7 +10,7 @@ For a more indepth walk through please visit [this article](https://linchpin.age
 
 ### Important Changes Regarding the build process compared to v1
 
-The latest version of this script will not only deploy your code, the latest version will also *build* your code as long as the script finds a `gulpfile`, `gruntfile`, `yarn` etc. In order to bild your project simply create a task in your task runner named `build:production`.
+The latest version of this script will not only deploy your code, the latest version will also *build* your code as long as the script finds a `gulpfile`, `gruntfile`, `yarn` etc. In order to build your project simply create a task in your task runner named `build:production`.
 
 *Supports both WP Engine legacy and Multi environment sites (Legacy Staging or Dev, Staging, Production)*
 
@@ -93,7 +93,7 @@ In order to deploy to your pipeline you can use the following command regardless
 
 ```
 # load our build script from the LightboxDigital repo
-git clone --branch "improvement/build-process" --depth 50 https://github.com/LightboxDigital/codeship-wpengine-deployment.git
+git clone --branch "master" https://github.com/LightboxDigital/codeship-wpengine-deployment.git
 chmod 555 ./codeship-wpengine-deployment/build.sh
 chmod 555 ./codeship-wpengine-deployment/deploy.sh
 chmod 555 ./codeship-wpengine-deployment/build-deploy.sh

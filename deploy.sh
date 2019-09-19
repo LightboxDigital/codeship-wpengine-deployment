@@ -51,7 +51,7 @@ cd ~/clone
 
 # Get official list of files/folders that are not meant to be on production if $EXCLUDE_LIST is not set.
 if [[ -z "${EXCLUDE_LIST}" ]]; then
-    wget https://raw.githubusercontent.com/LightboxDigital/codeship-wpengine-deployment/master/exclude-list.txt
+    wget https://raw.githubusercontent.com/LightboxDigital/codeship-wpengine-deployment/master/exclude-list.txt?token=ALMQJCSAVFDOFJSTSZRACAK5RUSMK
 else
     # @todo validate proper url?
     wget ${EXCLUDE_LIST}
@@ -102,7 +102,7 @@ else
 fi
 
 # Move the gitignore file to the deployments folder
-wget --output-document=.gitignore https://raw.githubusercontent.com/LightboxDigital/codeship-wpengine-deployment/master/gitignore-template.txt
+wget --output-document=.gitignore https://raw.githubusercontent.com/LightboxDigital/codeship-wpengine-deployment/master/gitignore-template.txt?token=ALMQJCTWBAQ5PALDL3BNLWK5RUSKA
 
 # Delete plugin/theme if it exists, and move cleaned version into deployment folder
 rm -rf ./wp-content/${PROJECT_TYPE}s/${REPO_NAME}
